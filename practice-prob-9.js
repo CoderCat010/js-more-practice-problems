@@ -4,16 +4,16 @@
     * tablet = 15000 tk
     * mobile = 20000 tk
 */
-function calculateElectronicsBudget(laptopBudget, tabletBudget, mobileBudget){
-    const laptopBudgetRequired = 55000;
-    const tableBudgetRequired = 30000;
-    const mobileBudgetRequired = 25000;
+// function calculateElectronicsBudget(laptopBudget, tabletBudget, mobileBudget){
+//     const laptopBudgetRequired = 55000;
+//     const tableBudgetRequired = 30000;
+//     const mobileBudgetRequired = 25000;
 
-    const totalLaptopBudget = laptopBudget * laptopBudgetRequired;
-    const totalTabletBudget = tabletBudget * tableBudgetRequired;
-    const totalmobileBudget = mobileBudget * mobileBudgetRequired;
-    const totalBudgetRequired = totalLaptopBudget + totalTabletBudget + totalmobileBudget;
+//     const totalLaptopBudget = laptopBudget * laptopBudgetRequired;
+//     const totalTabletBudget = tabletBudget * tableBudgetRequired;
+//     const totalmobileBudget = mobileBudget * mobileBudgetRequired;
+//     const totalBudgetRequired = totalLaptopBudget + totalTabletBudget + totalmobileBudget;
 
-    return totalBudgetRequired;
-}
-console.log(calculateElectronicsBudget(5, 2, 1));
+//     return totalBudgetRequired;
+// }
+// console.log(calculateElectronicsBudget(5, 2, 1));
