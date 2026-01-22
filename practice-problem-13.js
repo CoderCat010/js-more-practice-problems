@@ -36,6 +36,6 @@
 //     if(!input.endsWith(condition4)){
 //         return false
 //     }
-//     return input;
+//     return true;
 // }
 // console.log(validEmail("jdjd@.com"));
