@@ -10,30 +10,30 @@
     * Note: তোমাকে অবশ্যই আউটপুট আর রিটার্ন করতে হবে, console.log() করলে হবে না.
     * CHALLANGE: array এলিমেন্ট গুলো যদি Number না হয় তাহলে "invalid" রিটার্ন করবে.
 */
-function calculateWtachTime(totalTimes){
-    // user input validation
-    if(!Array.isArray(totalTimes)){
-        return 'invalid';
-    }
-    for(elements of totalTimes){
-        if(typeof elements !== 'number'){
-            return 'invalid';
-        }
-    }
+// function calculateWtachTime(totalTimes){
+//     // user input validation
+//     if(!Array.isArray(totalTimes)){
+//         return 'invalid';
+//     }
+//     for(elements of totalTimes){
+//         if(typeof elements !== 'number'){
+//             return 'invalid';
+//         }
+//     }
 
-    //calculating total seconeds
-    let totalSeconeds = 0;
-    for(let values of totalTimes){
-        totalSeconeds += values;
-    }
-    // primary task
-    let hours = Math.floor(totalSeconeds / 3600);
-    let remainingSeconeds = totalSeconeds % 3600;
-    let minute = Math.floor(remainingSeconeds / 60);
-    let seconed = remainingSeconeds % 60;
+//     //calculating total seconeds
+//     let totalSeconeds = 0;
+//     for(let values of totalTimes){
+//         totalSeconeds += values;
+//     }
+//     // primary task
+//     let hours = Math.floor(totalSeconeds / 3600);
+//     let remainingSeconeds = totalSeconeds % 3600;
+//     let minute = Math.floor(remainingSeconeds / 60);
+//     let seconed = remainingSeconeds % 60;
 
-    return {hours: hours, minutes: minute, seconed: seconed};
-}
+//     return {hours: hours, minutes: minute, seconed: seconed};
+// }
 
-let arrayElm = [120, 233, 4555, 777]
-console.log(calculateWtachTime(arrayElm));
+// let arrayElm = [120, 233, 4555, 777]
+// console.log(calculateWtachTime(arrayElm));
