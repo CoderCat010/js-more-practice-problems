@@ -1,12 +1,27 @@
 //find largest value in array using by function
 let arrElm = [11, 33, 4, 5555, 5, 66, 63, 383, 930];
 function findLargest(numbers){
+    if(!Array.isArray(numbers)){
+        return 'please provide an array';
+    }
+    if(numbers.length === 0){
+        return 'array should not be empty'
+    }
+
     let max = numbers[0];
     for(let i = 0; i < numbers.length; i++){
+        if(typeof numbers[i] !== 'number'){
+            return 'please provode only number';
+        }
+        
+        if(numbers[i] < 0){
+            return 'number should be positive';
+        }
+
         if(numbers[i] > max){
             max = numbers[i]
         }
     }
-    return max
+    return max;
 }
 console.log(findLargest(arrElm));
