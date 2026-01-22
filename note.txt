@@ -1,0 +1,29 @@
+//=========================================NOTE: 1
+//-----> find who's the tallest? 
+let heights = [166, 170, 175, 178, 183, 185, 187, 190];
+
+function getMax(numbers){
+    let max = numbers[0]
+    for(let i = 0; i < numbers.length; i++){
+        if(numbers[i] > max){
+            max = numbers[i];
+        }
+    }
+    return max
+}
+console.log(getMax(heights)); // correct code 
+
+//-----> find who's the tallest? 
+let heights = [166, 170, 175, 178, 183, 185, 187, 190];
+let max = heights[0]
+
+function getMax(numbers){
+    for(let i = 0; i < heights.length; i++){
+        if(heights[i] > max){
+            max = heights[i];
+        }
+    }
+    return max
+}
+console.log(getMax(heights)); // incorrect code karon ekhane amra mean korteci amader height nijei sobsomoy kaj korbe but jodi amra argument hishebe notun akta array ditam o seta print korto na karon amra global variable er jinish use korteci sobsomoy funtion er actual jinish use korteci na but amra to cacchi jei argument e dewa hok function seta niyei kaj korbe seta new array hok ba heights oi array ta hok it doesnt matter amra hocce default vabe diye rakhce je eivabe eivabe kaj korba ekhon tomar bepar tumi kemon argument function take daw.
+
